@@ -1,5 +1,5 @@
 homepage: "https://consentory.io"
 documentation: "https://consentory.io/knowledge-base/google-consent-mode-v2-gtm-setup"
 versions:
-  - sha: 38519a4ca7e9d4fb58c358f6bf2665827774771a
-    changeNotes: Initial Consent Mode v2 template candidate; pending GTM validation and widget deployment.
+  - sha: d8fb0eb1552a1b855f1eb24624b4611fd034389e
+    changeNotes: Initial release. Native Consent Mode v2 defaults and updates, Consentory CMP loading, and saved choice restoration.
