@@ -1,3 +1,11 @@
+﻿___TERMS_OF_SERVICE___
+
+By creating or modifying this file you agree to Google Tag Manager's Community
+Template Gallery Developer Terms of Service available at
+https://developers.google.com/tag-manager/gallery-tos (or such other URL as
+Google may provide), as modified from time to time.
+
+
 ___INFO___
 
 {
@@ -11,13 +19,15 @@ ___INFO___
     "UTILITY"
   ],
   "brand": {
-    "displayName": "Consentory"
+    "displayName": "Consentory",
+    "id": "brand_custom_template"
   },
   "description": "Loads the Consentory cookie banner and manages Google Consent Mode v2. Setup and support: https://consentory.io/knowledge-base/google-consent-mode-v2-gtm-setup",
   "containerContexts": [
     "WEB"
   ]
 }
+
 
 ___TEMPLATE_PARAMETERS___
 
@@ -35,6 +45,7 @@ ___TEMPLATE_PARAMETERS___
     ]
   }
 ]
+
 
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
@@ -84,6 +95,7 @@ if (!setInWindow('ConsentoryGtmBridge', { token: token, update: update })) {
 }
 const url = "https://consentory.io/api/embed/v2/" + token + '.js';
 injectScript(url, data.gtmOnSuccess, data.gtmOnFailure, url);
+
 
 ___WEB_PERMISSIONS___
 
@@ -407,6 +419,7 @@ ___WEB_PERMISSIONS___
   }
 ]
 
+
 ___TESTS___
 
 scenarios:
@@ -438,6 +451,9 @@ scenarios:
     runCode({scriptToken: '0123456789abcdef01234567'});
     assertApi('gtmOnFailure').wasCalled();
 
+
 ___NOTES___
 
 Use Consent Initialization - All Pages. Requires the Consentory GTM bridge release. See README.md for validation and maintenance.
+
+
