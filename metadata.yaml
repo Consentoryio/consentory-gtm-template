@@ -1,5 +1,5 @@
 homepage: "https://consentory.io"
 documentation: "https://consentory.io/knowledge-base/google-consent-mode-v2-gtm-setup"
-# Add the real template commit SHA after creating the standalone GitHub repository.
-# Do not submit this repository until a release is pinned and GTM checks pass.
-versions: []
+versions:
+  - sha: 38519a4ca7e9d4fb58c358f6bf2665827774771a
+    changeNotes: Initial Consent Mode v2 template candidate; pending GTM validation and widget deployment.
